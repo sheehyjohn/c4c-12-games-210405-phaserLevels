@@ -9,6 +9,10 @@ module.exports = (env, argv) => ({
     app: path.resolve(__dirname, './src/index.js'),
     vendor: ['phaser'],
   },
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
   devtool: argv.mode === 'development' ? 'cheap-module-eval-source-map' : 'none',
   module: {
     rules: [

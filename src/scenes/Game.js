@@ -99,20 +99,11 @@ class Game extends Phaser.Scene {
             repeat: -1,
         });
 
-        this.addMap();
-      
-        //this.hero = new Hero(this, 250, 160);
+        this.addMap(); 
         this.addHero();
 
         this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
-        this.cameras.main.startFollow(this.hero);  
-
-        
-
-        // Platform
-        // const platform = this.add.rectangle(220, 240, 260, 10, 0x4BCB7C);
-        // this.physics.add.existing(platform, true);        //true means it can't be moved
-        // this.physics.add.collider(this.hero, platform);
+        this.cameras.main.startFollow(this.hero);   
   }
 
   addHero() {

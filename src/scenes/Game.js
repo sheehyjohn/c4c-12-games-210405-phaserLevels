@@ -124,7 +124,7 @@ class Game extends Phaser.Scene {
     this.physics.world.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
     this.physics.world.setBoundsCollision(true, true, false, true);
   }
-
+// just to make a commit to view logs
   update(time, delta) {}  //updates at (ideally) 60fps
                           // delta - time since last frame
 }
